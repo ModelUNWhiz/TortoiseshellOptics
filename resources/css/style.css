@@ -1,0 +1,145 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+body {
+  font-family: Helvetica;
+}
+.container {
+  display: flex
+}
+.lead {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+header {
+  background-color: cadetblue;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: white;
+  margin-top: 1rem;
+  width: 960px;
+  align-items: center;
+  position: relative;
+  height: 2.5rem;
+  display: flex;
+}
+.logo {
+  flex-grow: 1;
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+}
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+nav {
+  justify-content: space-between;
+}
+nav span {
+  margin-left: 2rem;
+}
+.caption {
+  background-color: white;
+  margin-top: 10rem;
+  text-align: center;
+  display: flex;
+  position: relative;
+  margin-top: 10rem;
+  left: 33rem;
+  width: 620px;
+}
+.caption span {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 1.5rem 5rem;
+}
+
+.services {
+  width: 100%;
+  height: 8rem;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.info {
+  flex-direction: row;
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+}
+.column img {
+  height: auto;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+  max-width: 6rem;
+  margin: 0 3rem;
+}
+.left, .middle {
+  margin-right: 6rem;
+}
+#paper {
+  width: 3.5rem;
+}
+#ruler, #truck {
+  width: 5rem;
+}
+.column span {
+  flex-wrap: wrap;
+  text-align: center
+
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+}
+.secondcolumn {
+  border: 1px solid aquamarine;
+  max-width: 35%;
+  margin-bottom: 5rem;
+}
+.subheading {
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  display: flex;
+  width: 10rem;
+}
+.bodytext {
+  margin-top: 1rem;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+footer {
+  background-color: azure;
+  width: 1000px;
+  margin: 0 auto;
+}
+.row {
+  padding: 4rem 0 4rem 4rem;
+  display: flex;
+  align-items: center;
+}
+.row img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
