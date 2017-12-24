@@ -4,12 +4,13 @@ html {
 }
 body {
   font-family: Helvetica;
+  overflow: visible;
 }
 .container {
   display: flex
 }
 .lead {
-  width: 100%;
+  max-width: 100%;
   height: 30rem;
   display: flex;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
@@ -47,6 +48,9 @@ nav {
 nav span {
   margin-left: 2rem;
 }
+#truncated {
+  display: none;
+}
 .caption {
   background-color: white;
   margin-top: 10rem;
@@ -64,7 +68,7 @@ nav span {
 }
 
 .services {
-  width: 100%;
+  max-width: 100%;
   height: 8rem;
   justify-content: center;
   margin: 3rem 0;
@@ -72,7 +76,7 @@ nav span {
 .info {
   flex-direction: row;
   display: flex;
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .column img {
@@ -92,10 +96,10 @@ nav span {
   margin-right: 6rem;
 }
 #paper {
-  width: 3.5rem;
+  max-width: 3.5rem;
 }
 #ruler, #truck {
-  width: 5rem;
+  max-width: 5rem;
 }
 .column span {
   flex-wrap: wrap;
@@ -118,7 +122,7 @@ nav span {
   color: white;
   padding: 0.5rem 0 0.5rem 1.25rem;
   display: flex;
-  width: 10rem;
+  max-width: 10rem;
 }
 .bodytext {
   margin-top: 1rem;
@@ -130,7 +134,7 @@ nav span {
 
 footer {
   background-color: azure;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .row {
@@ -170,5 +174,70 @@ footer {
   .caption span {
     margin: 0.75rem 4rem;
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .lead {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .normal-menu {
+    display: none;
+  }
+  #truncated {
+    display: block;
+  }
+  .services {
+    height: 31rem;
+    margin: 3.77rem 0;
+  }
+  .info {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .column {
+    height: 10rem;
+  }
+  .column img {
+    margin-bottom: 0;
+  }
+  .other {
+    flex-direction: column;
+  }
+  .secondcolumn {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+  .subheading {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .subheading span {
+    margin: 0 auto;
+  }
+  .philosophy {
+    margin-right: 0;
+  }
+  .bodytext {
+    font-size: 0.77rem;
+  }
+  .row span{
+    display: none;
+  }
+  .row img {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .caption {
+    margin-top: 9rem;
+    max-width: 100%;
+    left: 0;
+  }
+  .caption span {
+    margin: 1rem auto;
+    font-size: 1rem;
   }
 }
